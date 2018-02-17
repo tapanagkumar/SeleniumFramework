@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 /**
- * @author Gowri
+ * @author Gowri Kumar
  *
  */
 public class Tc1CustomersLogin extends Base {
