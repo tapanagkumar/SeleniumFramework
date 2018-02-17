@@ -49,7 +49,7 @@ public class Tc1CustomersLogin extends Base {
 		Select select = new Select(element);
 		List<WebElement> listofelements = select.getOptions();
 		// iterate through each and every option in the drop down
-		for (int j = 5; j < listofelements.size(); j++) {
+		for (int j = 1; j < listofelements.size(); j++) {
 
 			Thread.sleep(3000);
 			log.info("Selecting the elements in the customer list " + j);

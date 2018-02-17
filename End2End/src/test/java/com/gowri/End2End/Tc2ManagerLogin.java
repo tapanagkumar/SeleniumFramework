@@ -27,7 +27,7 @@ public static Logger log = LogManager.getLogger(Base.class.getName());
 		PageObjects.HomePage home = new PageObjects.HomePage(driver);
 		String title = home.banktitle().getText();
 		log.info("Comparing Bank Name");
-		Assert.assertEquals("XYZ Bank1", title);
+		Assert.assertEquals("XYZ Bank", title);
 		log.info("Bank name comparision successful");
 		log.info("Now clicking on Manager Button");
 		home.bankManagerlogin().click();
