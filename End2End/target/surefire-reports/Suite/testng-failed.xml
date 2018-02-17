@@ -5,15 +5,14 @@
     <listener class-name="com.gowri.Resources.ExtentReporterNG"/>
     <listener class-name="com.gowri.End2End.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Validating Manager Logins(failed)" verbose="0">
+  <test thread-count="5" name="Deposit Money(failed)" verbose="0">
     <classes>
-      <class name="com.gowri.End2End.Tc2ManagerLogin">
+      <class name="com.gowri.End2End.Tc3DepositAmount">
         <methods>
-          <include name="managerLogin"/>
-          <include name="teardown"/>
           <include name="initialize"/>
+          <include name="depositMoney"/>
         </methods>
-      </class> <!-- com.gowri.End2End.Tc2ManagerLogin -->
+      </class> <!-- com.gowri.End2End.Tc3DepositAmount -->
     </classes>
-  </test> <!-- Validating Manager Logins(failed) -->
+  </test> <!-- Deposit Money(failed) -->
 </suite> <!-- Failed suite [Suite] -->

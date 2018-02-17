@@ -7,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -44,8 +45,14 @@ public class Tc3DepositAmount extends Base {
 		log.info("Clicked on the Login button");
 		Thread.sleep(3000);
 		log.info("Clicking on Deposit Money");
-		Transaction.deposit().click();
-		System.out.print("Money Depositing System");
+		Transaction.depositbutton().click();
+		log.info("Enter Money");
+		Transaction.money().sendKeys(prop.getProperty("MoneyDeposit"));
+		log.info("Confirming Deposit");
+		Transaction.confirmdeposit().click();
+		String isDepositSuccessful = Transaction.verifydeposit().getText();
+		Assert.assertEquals("Deposit Successful", isDepositSuccessful);
+		
 
 	}
 }
