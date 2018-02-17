@@ -30,7 +30,7 @@ public class Tc1CustomersLogin extends Base {
 
 	}
 
-	@Test()
+	@Test(enabled = false)
 	public void customerLogin() throws InterruptedException {
 		driver.get(prop.getProperty("URL"));
 		PageObjects.HomePage home = new PageObjects.HomePage(driver);

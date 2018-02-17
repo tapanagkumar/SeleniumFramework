@@ -9,6 +9,7 @@ public class CustomerAccountsPage {
 
 	By logout = By.xpath("//button[text()='Logout']");
 	By customername = By.xpath("//span[@class='fontBig ng-binding']");
+	By Deposit = By.cssSelector("body>div.ng-scope>div>div.ng-scope>div>div:nth-child(5)>button:nth-child(2)");
 
 	public CustomerAccountsPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -24,5 +25,12 @@ public class CustomerAccountsPage {
 	public WebElement customername(){
 		return driver.findElement(customername);
 	}
+	public WebElement deposit()
+	{
+		return driver.findElement(Deposit);
+		
+				
+		}
+	
 }
 

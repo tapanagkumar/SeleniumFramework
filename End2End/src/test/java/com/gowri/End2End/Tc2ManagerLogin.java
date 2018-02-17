@@ -19,7 +19,7 @@ public static Logger log = LogManager.getLogger(Base.class.getName());
 	}
 
 	
-	@Test
+	@Test(enabled= false)
 	public void managerLogin() {
 		log.info("Entered Test 2");
 		driver.get(prop.getProperty("URL"));

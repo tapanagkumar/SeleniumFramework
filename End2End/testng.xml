@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
- <listeners>
-     
- <listener class-name="com.gowri.Resources.ExtentReporterNG"/>
-  <listener class-name="com.gowri.End2End.Listeners"/>
-         
+	<listeners>
 
- </listeners>
-  <test thread-count="5" name="Validating Customer Logins">
-    <classes>
-      <class name="com.gowri.End2End.Tc1CustomersLogin"/>
-    </classes>
-    </test> <!-- Test -->
-     <test thread-count="5" name="Validating Manager Logins">
-     <classes>
-      <class name="com.gowri.End2End.Tc2ManagerLogin"/>
-    </classes>
-  </test> <!-- Test -->
+		<listener class-name="com.gowri.Resources.ExtentReporterNG" />
+		<listener class-name="com.gowri.End2End.Listeners" />
+
+
+	</listeners>
+	
+	<test thread-count="5" name="Validating Customer Logins">
+		<classes>
+			<class name="com.gowri.End2End.Tc1CustomersLogin" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test thread-count="5" name="Validating Manager Logins">
+		<classes>
+			<class name="com.gowri.End2End.Tc2ManagerLogin" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test thread-count="5" name="Deposit Money">
+		<classes>
+			<class name="com.gowri.End2End.Tc3DepositAmount" />
+		</classes>
+	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->
