@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -53,6 +54,14 @@ public class Tc3DepositAmount extends Base {
 		String isDepositSuccessful = Transaction.verifydeposit().getText();
 		Assert.assertEquals("Deposit Successful", isDepositSuccessful);
 		
+
+	}
+	
+	@AfterTest
+	public void teardown() {
+
+		driver.quit();
+		driver = null;
 
 	}
 }
