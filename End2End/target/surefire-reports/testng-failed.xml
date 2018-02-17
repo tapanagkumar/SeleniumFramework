@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.gowri.Resources.ExtentReporterNG"/>
+    <listener class-name="com.gowri.End2End.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Validating Manager Logins(failed)" verbose="0">
+    <classes>
+      <class name="com.gowri.End2End.Tc2ManagerLogin">
+        <methods>
+          <include name="managerLogin"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.gowri.End2End.Tc2ManagerLogin -->
+    </classes>
+  </test> <!-- Validating Manager Logins(failed) -->
+</suite> <!-- Failed suite [Suite] -->
