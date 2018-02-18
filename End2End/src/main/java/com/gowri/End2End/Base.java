@@ -35,6 +35,7 @@ public class Base {
 	public static FileInputStream fin;
 	public static FileOutputStream fout;
 
+	//Code to Initialize driver
 	public WebDriver initializeDriver() throws IOException {
 
 		prop = new Properties();
@@ -71,9 +72,10 @@ public class Base {
 
 	// Read from Excel
 	public void ReadFromExcel() throws Exception {
-		// Read the login details from excel sheet stored in resources folder
+		
+		
 
-		// file for reading the user name and password
+		// File for reading data from Contacts 
 		fin = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\com\\gowri\\Resources\\Contacts.xlsx");
 		wb = new XSSFWorkbook(fin);

@@ -2,43 +2,47 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-02-17T23:24:17Z" name="Suite" finished-at="2018-02-17T23:24:40Z" duration-ms="22416">
+  <suite started-at="2018-02-18T01:19:57Z" name="Suite" finished-at="2018-02-18T01:20:15Z" duration-ms="18410">
     <groups>
     </groups>
-    <test started-at="2018-02-17T23:24:17Z" name="Validating Customer Logins" finished-at="2018-02-17T23:24:22Z" duration-ms="4246">
+    <test started-at="2018-02-18T01:19:57Z" name="Validating Customer Logins" finished-at="2018-02-18T01:20:00Z" duration-ms="3303">
       <class name="com.gowri.End2End.Tc1CustomersLogin">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.gowri.End2End.Tc1CustomersLogin@77b14724]" started-at="2018-02-17T23:24:17Z" name="initialize" finished-at="2018-02-17T23:24:21Z" duration-ms="3445" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.gowri.End2End.Tc1CustomersLogin@232a7d73]" started-at="2018-02-18T01:19:57Z" name="initialize" finished-at="2018-02-18T01:19:59Z" duration-ms="2559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.gowri.End2End.Tc1CustomersLogin@77b14724]" started-at="2018-02-17T23:24:21Z" name="teardown" finished-at="2018-02-17T23:24:22Z" duration-ms="795" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.gowri.End2End.Tc1CustomersLogin@232a7d73]" started-at="2018-02-18T01:19:59Z" name="teardown" finished-at="2018-02-18T01:20:00Z" duration-ms="736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.gowri.End2End.Tc1CustomersLogin -->
     </test> <!-- Validating Customer Logins -->
-    <test started-at="2018-02-17T23:24:22Z" name="Validating Manager Logins" finished-at="2018-02-17T23:24:26Z" duration-ms="4076">
+    <test started-at="2018-02-18T01:20:00Z" name="Validating Manager Logins" finished-at="2018-02-18T01:20:03Z" duration-ms="2660">
       <class name="com.gowri.End2End.Tc2ManagerLogin">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.gowri.End2End.Tc2ManagerLogin@3a3e78f]" started-at="2018-02-17T23:24:22Z" name="initialize" finished-at="2018-02-17T23:24:25Z" duration-ms="3252" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.gowri.End2End.Tc2ManagerLogin@53d102a2]" started-at="2018-02-18T01:20:00Z" name="initialize" finished-at="2018-02-18T01:20:02Z" duration-ms="1928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.gowri.End2End.Tc2ManagerLogin@3a3e78f]" started-at="2018-02-17T23:24:25Z" name="teardown" finished-at="2018-02-17T23:24:26Z" duration-ms="824" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.gowri.End2End.Tc2ManagerLogin@53d102a2]" started-at="2018-02-18T01:20:02Z" name="teardown" finished-at="2018-02-18T01:20:03Z" duration-ms="732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.gowri.End2End.Tc2ManagerLogin -->
     </test> <!-- Validating Manager Logins -->
-    <test started-at="2018-02-17T23:24:26Z" name="Deposit Money" finished-at="2018-02-17T23:24:40Z" duration-ms="14038">
+    <test started-at="2018-02-18T01:20:03Z" name="Deposit Money" finished-at="2018-02-18T01:20:15Z" duration-ms="12410">
       <class name="com.gowri.End2End.Tc3DepositAmount">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.gowri.End2End.Tc3DepositAmount@362045c0]" started-at="2018-02-17T23:24:26Z" name="initialize" finished-at="2018-02-17T23:24:29Z" duration-ms="3078" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.gowri.End2End.Tc3DepositAmount@1b765a2c]" started-at="2018-02-18T01:20:03Z" name="initialize" finished-at="2018-02-18T01:20:04Z" duration-ms="1910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="depositMoney()[pri:0, instance:com.gowri.End2End.Tc3DepositAmount@362045c0]" started-at="2018-02-17T23:24:29Z" name="depositMoney" finished-at="2018-02-17T23:24:40Z" duration-ms="10929" status="PASS">
+        <test-method signature="depositMoney()[pri:0, instance:com.gowri.End2End.Tc3DepositAmount@1b765a2c]" started-at="2018-02-18T01:20:04Z" name="depositMoney" finished-at="2018-02-18T01:20:14Z" duration-ms="9791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- depositMoney -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.gowri.End2End.Tc3DepositAmount@1b765a2c]" started-at="2018-02-18T01:20:14Z" name="teardown" finished-at="2018-02-18T01:20:15Z" duration-ms="690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- com.gowri.End2End.Tc3DepositAmount -->
     </test> <!-- Deposit Money -->
   </suite> <!-- Suite -->
