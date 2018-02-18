@@ -17,7 +17,6 @@ import org.testng.xml.XmlSuite;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import com.relevantcodes.extentreports.ReporterType;
 //implements TestNg IReporter 
 public class ExtentReporterNG implements IReporter{
 	private ExtentReports extent;
@@ -65,7 +64,8 @@ public class ExtentReporterNG implements IReporter{
         }
     }
  
-    private Date getTime(long millis) {
+    @SuppressWarnings("unused")
+	private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
         return calendar.getTime();        
