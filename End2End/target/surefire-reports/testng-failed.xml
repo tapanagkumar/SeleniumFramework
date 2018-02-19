@@ -9,6 +9,7 @@
     <classes>
       <class name="com.gowri.End2End.Tc3DepositAmount">
         <methods>
+          <include name="teardown"/>
           <include name="initialize"/>
           <include name="depositMoney"/>
         </methods>

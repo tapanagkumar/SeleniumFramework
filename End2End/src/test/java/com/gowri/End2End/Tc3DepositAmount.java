@@ -52,7 +52,7 @@ public class Tc3DepositAmount extends Base {
 		log.info("Confirming Deposit");
 		Transaction.confirmdeposit().click();
 		String isDepositSuccessful = Transaction.verifydeposit().getText();
-		Assert.assertEquals("Deposit Successful", isDepositSuccessful);
+		Assert.assertEquals(isDepositSuccessful, "Deposit Successful");
 		
 
 	}

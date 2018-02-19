@@ -8,14 +8,12 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -35,7 +33,7 @@ public class Base {
 	public static FileInputStream fin;
 	public static FileOutputStream fout;
 
-	//Code to Initialize driver
+	// Code to Initialize driver
 	public WebDriver initializeDriver() throws IOException {
 
 		prop = new Properties();
@@ -52,6 +50,9 @@ public class Base {
 			// execute in chrome driver
 
 		} else if (browserName.equals("Firefox")) {
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\main\\java\\com\\gowri\\Resources\\geckodriver.exe");
+
+			
 			driver = new FirefoxDriver();
 			// firefox code
 		} else if (browserName.equals("IE")) {
@@ -72,10 +73,8 @@ public class Base {
 
 	// Read from Excel
 	public void ReadFromExcel() throws Exception {
-		
-		
 
-		// File for reading data from Contacts 
+		// File for reading data from Contacts
 		fin = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\com\\gowri\\Resources\\Contacts.xlsx");
 		wb = new XSSFWorkbook(fin);
