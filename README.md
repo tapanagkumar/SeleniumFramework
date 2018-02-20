@@ -1,2 +1,2 @@
 # SeleniumFramework
-This is the Selenium Framework which I am developing using Page object Model
+This is a sample Selenium Framework which being developed using Page object Model concept
