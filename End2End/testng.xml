@@ -27,4 +27,10 @@
 		</classes>
 	</test> <!-- Test -->
 	
+	<test thread-count="5" name="Deposit Money">
+		<classes>
+			<class name="com.gowri.End2End.Tc4AddCustomers" />
+		</classes>
+	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->

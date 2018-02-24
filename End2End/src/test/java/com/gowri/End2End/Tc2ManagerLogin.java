@@ -19,7 +19,7 @@ public static Logger log = LogManager.getLogger(Base.class.getName());
 	}
 
 	
-	@Test(enabled= false)
+	@Test(enabled= true)
 	public void managerLogin() {
 		log.info("Entered Test 2");
 		driver.get(prop.getProperty("URL"));
@@ -27,7 +27,7 @@ public static Logger log = LogManager.getLogger(Base.class.getName());
 		PageObjects.HomePage home = new PageObjects.HomePage(driver);
 		String title = home.banktitle().getText();
 		log.info("Comparing Bank Name after launch");
-		Assert.assertEquals("XYZ Bank", title);
+		Assert.assertEquals(prop.getProperty("BankName"), title);
 		log.info("Bank name comparision successful");
 		log.info("Now clicking on Manager Button");
 		home.bankManagerlogin().click();

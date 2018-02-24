@@ -30,7 +30,7 @@ public class Tc1CustomersLogin extends Base {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void customerLogin() throws InterruptedException {
 		driver.get(prop.getProperty("URL"));
 		PageObjects.HomePage home = new PageObjects.HomePage(driver);
@@ -38,7 +38,7 @@ public class Tc1CustomersLogin extends Base {
 		PageObjects.CustomerAccountsPage accounts = new PageObjects.CustomerAccountsPage(driver);
 		String title = home.banktitle().getText();
 		log.info("Comparing Bank Name");
-		Assert.assertEquals("XYZ Bank", title);
+		Assert.assertEquals(prop.getProperty("BankName"), title);
 		log.info("Bank name comparision successful");
 		home.customerlogin().click();
 		log.info("Now clicking on Customer Login button ");
