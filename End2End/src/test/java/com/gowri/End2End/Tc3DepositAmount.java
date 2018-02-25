@@ -27,7 +27,7 @@ public class Tc3DepositAmount extends Base {
 
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void depositMoney() throws InterruptedException {
 		driver.get(prop.getProperty("URL"));
 		PageObjects.HomePage home = new PageObjects.HomePage(driver);

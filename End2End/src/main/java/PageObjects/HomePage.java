@@ -11,6 +11,7 @@ public WebDriver driver;
 	By customerlogin=By.xpath("//button[text()='Customer Login']");
 	By managerlogin=By.xpath("//button[text()='Bank Manager Login']");
 	By title=By.xpath("//strong[@class='mainHeading']");
+	By home = By.xpath("//button[@class=\"btn home\"]");
 	
 	
 	public HomePage(WebDriver driver) {
@@ -34,5 +35,9 @@ public WebDriver driver;
 	public WebElement banktitle()
 	{
 		return driver.findElement(title);
+	}
+	public WebElement home()
+	{
+		return driver.findElement(home);
 	}
 }

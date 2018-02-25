@@ -2,6 +2,7 @@ package com.gowri.End2End;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -9,6 +10,8 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
@@ -27,11 +30,7 @@ public class Base {
 	public Properties prop;
 	public static Select mySelect;
 	public static Properties Param;
-	public static XSSFWorkbook wb;
-	public static XSSFSheet ws;
-	public static XSSFSheet ws1;
-	public static FileInputStream fin;
-	public static FileOutputStream fout;
+
 
 	// Code to Initialize driver
 	public WebDriver initializeDriver() throws IOException {
@@ -50,9 +49,9 @@ public class Base {
 			// execute in chrome driver
 
 		} else if (browserName.equals("Firefox")) {
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\main\\java\\com\\gowri\\Resources\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver",
+					System.getProperty("user.dir") + "\\src\\main\\java\\com\\gowri\\Resources\\geckodriver.exe");
 
-			
 			driver = new FirefoxDriver();
 			// firefox code
 		} else if (browserName.equals("IE")) {
@@ -71,16 +70,5 @@ public class Base {
 
 	}
 
-	// Read from Excel
-	public void ReadFromExcel() throws Exception {
-
-		// File for reading data from Contacts
-		fin = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\main\\java\\com\\gowri\\Resources\\Contacts.xlsx");
-		wb = new XSSFWorkbook(fin);
-		ws = wb.getSheet("Contacts");
-		// ws1=wb.getSheet("Registration");
-
-	}
-
+	
 }
