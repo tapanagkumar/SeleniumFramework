@@ -36,6 +36,7 @@ public class Base {
 	// Code to Initialize driver
 	public WebDriver initializeDriver() throws IOException {
 
+		//Path for data file 
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\com\\gowri\\Resources\\data.properties");
@@ -44,6 +45,7 @@ public class Base {
 		System.out.println(browserName);
 
 		if (browserName.equals("Chrome")) {
+			//Path for Chrome Driver
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\com\\gowri\\Resources\\chromedriver.exe");
 			driver = new ChromeDriver();
