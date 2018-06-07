@@ -15,7 +15,7 @@
 		</classes>
 	</test> <!-- Test -->
 	
-	<test thread-count="5" name="Validating Manager Logins">
+	<test thread-count="5" name="Validating ManAger Logins">
 		<classes>
 			<class name="com.gowri.End2End.Tc2ManagerLogin" />
 		</classes>
