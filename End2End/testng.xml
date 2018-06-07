@@ -27,7 +27,7 @@
 		</classes>
 	</test> <!-- Test -->
 	
-	<test thread-count="5" name="Add Customers">
+	<test thread-count="5" name="Add Customers to he Bank">
 		<classes>
 			<class name="com.gowri.End2End.Tc4AddCustomers" />
 		</classes>

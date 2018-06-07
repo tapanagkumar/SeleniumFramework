@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import PageObjects.CustomerAccountsPage;
-
+//Test Case 3
 public class Tc3DepositAmount extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	public Select select;
