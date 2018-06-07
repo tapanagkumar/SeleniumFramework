@@ -21,7 +21,7 @@ public static Logger log = LogManager.getLogger(Base.class.getName());
 	
 	@Test(enabled= true)
 	public void managerLogin() {
-		log.info("Entered Test 2");
+		log.info("Entered TestCase 2");
 		driver.get(prop.getProperty("URL"));
 		log.info("Navigated to Home Page");
 		PageObjects.HomePage home = new PageObjects.HomePage(driver);
