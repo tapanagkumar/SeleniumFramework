@@ -17,6 +17,7 @@ import org.testng.annotations.Test;
  * @author Gowri Kumar
  *
  */
+//Testcase1
 public class Tc1CustomersLogin extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	public Select select;
